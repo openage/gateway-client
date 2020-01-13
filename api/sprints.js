@@ -1,4 +1,4 @@
-const api = require('../helpers/request-helper')('projects')
+const api = require('../helpers/request-helper')('sprints')
 
 exports.search = async (query, context) => {
     return api.search(query, null, context)
