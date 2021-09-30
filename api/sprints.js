@@ -15,3 +15,7 @@ exports.get = async (id, context) => {
 exports.update = async (id, model, context) => {
     return api.update(id, model, null, context)
 }
+
+exports.guestTask = (model, context) => {
+    return api.create(model, { path: 'guestTask' }, context)
+}
